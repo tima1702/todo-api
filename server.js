@@ -1,6 +1,7 @@
 const app = require('express')();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const clientHttpError = require('./utils/clientHttpError');
 
 const routes = require('./routes');
@@ -18,6 +19,7 @@ const port = process.env.PORT || 3001;
     console.error(e);
   }
 
+  app.use(cors());
   app.use(bodyParser.json());
   app.use(routes);
   app.use(clientHttpError);
