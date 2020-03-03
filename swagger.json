@@ -5,7 +5,7 @@
     "title": "Simple API for TODO list",
     "description": "API for any todo tests"
   },
-  "host": "localhost:8000",
+  "host": "simple-api-todo.herokuapp.com",
   "basePath": "/api",
   "tags": [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "schemes": [
-    "http"
+    "https"
   ],
   "consumes": [
     "application/json"
